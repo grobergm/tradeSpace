@@ -1,11 +1,15 @@
 <script setup lang="ts">
-defineProps<{user:User}>();
+import { useRoute } from 'vue-router';
+
+// defineProps<{user:User}>();
+const route = useRoute();
+
 
 </script>
 
 <template>
   <div>
-    {{ user.name }}
+    Profile {{ route.params.userId }}
   </div>
 </template>
 

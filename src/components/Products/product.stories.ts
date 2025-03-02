@@ -1,17 +1,13 @@
-import Product from "./Product.vue";
+import ProductSearch from "./ProductSearch.vue";
 import type { Meta, StoryObj } from '@storybook/vue3';
 
 const meta = {
   title: "Products/Product",
-  component:Product,
+  component:ProductSearch,
   args: {
-    user:{
-      userId:1,
-      name: "John Doe",
-      email: "john@doe.email.com"
-    }
+
   }
-} satisfies Meta<typeof Product>;
+} satisfies Meta<typeof ProductSearch>;
 
 export default meta;
 

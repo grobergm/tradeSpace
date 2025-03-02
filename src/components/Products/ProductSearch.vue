@@ -1,11 +1,10 @@
 <script setup lang="ts">
-defineProps<{user:User}>();
 
 </script>
 
 <template>
   <div>
-    {{ user.name }}
+    Product Search
   </div>
 </template>
 
