@@ -1,0 +1,33 @@
+:root {
+  --primary: #1A76FF;
+  --primaryText: #FFFFFF;
+  --background: linear-gradient(90deg, #2a4f6e, #74ae96)
+}
+
+h1 {
+  font-family: 'Montserrat'
+}
+
+@font-face
+{
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/font/Montserrat-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/font/Roboto-Regular.ttf');
+}
+
+html {
+  background: var(--background);
+  height:100vh;
+  color: var(--primaryText);
+  font-family: 'Roboto';
+
+}
+
