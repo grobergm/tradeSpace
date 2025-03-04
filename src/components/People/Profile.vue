@@ -31,14 +31,14 @@ loadUserInfo()
 <template>
     <article>
         <section class="profileCard">
-            <div class="imgWrapper">
+            <div class="userInfo">
                 <img class="profilePic" :src="user.photoUrl" alt="profile picture">
-            </div>
-            <div>
-                <h1>{{ user.name }}</h1>
-                <p>{{ user.email }}</p>
-                <p>{{ user.bio }}</p>
-                <Stars :stars="user.stars" :reviews="user.reviews"></Stars>
+                <div>
+                    <h1>{{ user.name }}</h1>
+                    <p>{{ user.email }}</p>
+                    <p>{{ user.bio }}</p>
+                    <Stars :stars="user.stars" :reviews="user.reviews"></Stars>
+                </div>
             </div>
             <nav>
                 <ul>
@@ -64,24 +64,26 @@ loadUserInfo()
 
 .profileCard {
     display:grid;
-    grid-template-columns: 17.5rem 1fr;
+    /* grid-template-columns: 17.5rem 1fr; */
     gap:2.5rem;
     background: rgba(255,255,255,0.25);
     padding:2rem;
     border-radius:0.5rem;
 }
 
-.imgWrapper {
-    width:17.5rem;
-    height:17.5rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
+.userInfo {
+    display:flex;
+    gap:2.5rem;
 }
 
 img.profilePic {
     width:100%;
-    height:100%;
-    object-fit:cover
+    max-height:17.5rem;
+    max-width:17.5rem;
+    /* height:17.5rem; */
+    object-fit:cover;
+    border-radius: 0.5rem;
+
 }
 
 ul {
