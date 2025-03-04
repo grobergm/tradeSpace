@@ -28,22 +28,12 @@ const user:User = {
 </template>
 
 <style scoped>
-
-
 ul {
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  margin:0;
-  padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5rem;
 }
 
-li {
-  list-style: none;
-}
 
-a {
-  color:white;
-  text-decoration: none;
-}
 </style>

@@ -10,7 +10,24 @@ const routes = [
   },
   {
     path: '/people/:userId',
-    component: ()=> import("./components/People/Profile.vue") 
+    redirect: {name:'profile-items'},
+    component: ()=> import("./components/People/Profile.vue"),
+    children:[
+        {
+            path:'items',
+            name: 'profile-items',
+            component: ()=> import("./components/People/subtabs/Items.vue")
+        },
+        {
+            path:'trades',
+            component: ()=> import("./components/People/subtabs/Trades.vue")
+        },
+        {
+            path:'reviews',
+            component: ()=> import("./components/People/subtabs/Reviews.vue")
+        },
+
+    ]
   },
 ]
 

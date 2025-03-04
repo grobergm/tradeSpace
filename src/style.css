@@ -1,22 +1,18 @@
 :root {
-  --primary: #1A76FF;
-  --primaryText: #FFFFFF;
-  --background: linear-gradient(90deg, #2a4f6e, #74ae96)
+    --primary: #1A76FF;
+    --primaryText: #FFFFFF;
+    --background: linear-gradient(90deg, #2a4f6e, #74ae96)
 }
 
-h1 {
-  font-family: 'Montserrat'
-}
 
-@font-face
-{
+@font-face {
     font-family: 'Montserrat';
     font-weight: normal;
     font-style: normal;
     src: url('/font/Montserrat-Regular.ttf');
 }
-@font-face
-{
+
+@font-face {
     font-family: 'Roboto';
     font-weight: normal;
     font-style: normal;
@@ -24,10 +20,39 @@ h1 {
 }
 
 html {
-  background: var(--background);
-  height:100vh;
-  color: var(--primaryText);
-  font-family: 'Roboto';
+    background: var(--background);
+    height: 100vh;
+    color: var(--primaryText);
+    font-family: 'Roboto';
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat';
+    margin: 0;
 
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
