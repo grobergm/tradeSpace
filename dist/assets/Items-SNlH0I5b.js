@@ -1,0 +1,1 @@
+import{_ as e,c,o as s}from"./index-DdmghTPf.js";const t={},o={class:"wrapper"};function r(_,a){return s(),c("div",o,"Items")}const d=e(t,[["render",r],["__scopeId","data-v-b802e85c"]]);export{d as default};
